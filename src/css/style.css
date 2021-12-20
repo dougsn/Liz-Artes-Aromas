@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /*Corrige a linkagem interna, para não cobrir o conteúdo*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-responsivo {
+  display: none;
+}
+
+.wpp img {
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: 0.5s ease;
+}
+
+.wpp img:hover {
+  transform: translateY(-5px);
+}
+
+li a {
+  text-decoration: none;
+  color: #89ccee;
+  transition: 0.5s ease;
+  font-weight: 600;
+}
+
+li a:hover {
+  color: #01aaff;
+}
+
+nav {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.055);
+  height: 70px;
+  background: #fdfdfd;
+}
+.img-header {
+  width: 40px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+.modal-backdrop {
+  position: inherit;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../img/Sabonetes/IMAGEM_FUBÁ_E_MEL.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.home h1 {
+  color: #2f86a6;
+  font-size: 50px;
+  font-weight: 800;
+}
+.home p {
+  font-size: 30px;
+  margin-top: 30px;
+  color: #056f95;
+}
+
+.home button {
+  border: none;
+  padding: 12px;
+  border-radius: 7px;
+  background-color: #2f86a6;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.home button:hover {
+  transform: scale(1.05);
+}
+
+.home button a {
+  color: #fff;
+}
+
+/*Inicio dos Produtos*/
+
+.produtos {
+  display: flex;
+  gap: 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.title-section {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  text-align: center;
+  margin-bottom: 100px;
+  font-weight: 400;
+}
+
+/* .produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+} */
+
+.btn {
+  background-color: #01aaff;
+  padding: 5px 15px;
+  border-radius: 7px;
+  margin: 20px 0px;
+  transition: 0.5s ease;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+  background-color: #01aaff;
+  border: none;
+}
+
+.btn span {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+.texto {
+  max-width: 300px;
+}
+
+.title-produto {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.description-produto {
+  margin: 5px 0;
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.caixa:hover img {
+  transform: scale(1.02);
+}
+
+.caixa p {
+  text-align: center;
+}
+
+.caixa img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+/*Equipe*/
+
+.contato-equipe {
+  position: relative;
+  height: 700px;
+  background-image: url('../img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.equipe {
+  padding: 30px 15px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(204, 204, 204, 0.6);
+  border-radius: 8px;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.equipe:hover {
+  transform: scale(1.02);
+  background-color: rgba(204, 204, 204, 1);
+  backdrop-filter: none;
+}
+.equipe h1 {
+  font-size: 1.5rem;
+}
+
+.equipe p {
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.equipe .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.container-equipe {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.equipe .links img {
+  width: 25px;
+  transition: 0.5s ease;
+}
+
+.equipe .links img:hover {
+  transform: scale(1.15);
+}
+
+.final {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.final p {
+  margin-bottom: 0rem;
+}
+
+/*Responsividade*/
+
+@media (max-width: 400px) {
+  .equipe {
+    padding: 15px 10px !important;
+  }
+  .equipe p {
+    font-size: 12px;
+  }
+
+  .equipe h1 {
+    font-size: 20px;
+  }
+
+  .equipe .links img {
+    width: 22px;
+  }
+
+  .final p {
+    font-size: 14px;
+  }
+
+  .container-img img {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  .descricao_produto {
+    padding: 100px 50px;
+    gap: 50px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .wpp img {
+    width: 35px;
+    height: 35px;
+  }
+  /*Parte do responsio da pagina de detalhes*/
+
+  .container-img img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .descricao h1 {
+    font-size: 25px;
+  }
+
+  .descricao p,
+  .descricao p b {
+    font-size: 13px;
+  }
+
+  .descricao_produto {
+    padding: 100px 50px;
+    gap: 100px;
+  }
+}
+
+@media (max-width: 764px) {
+  .home h1 {
+    font-size: 35px;
+  }
+
+  .home p {
+    font-size: 18px;
+  }
+
+  .home button a {
+    font-size: 13px;
+  }
+
+  .home button {
+    padding: 6px;
+  }
+
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    padding: 5px 12px !important;
+    font-size: 12px;
+  }
+
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  .navbar-responsivo {
+    display: flex;
+    align-content: center;
+  }
+
+  .conteiner-produtos {
+    width: 350px;
+  }
+
+  .offcanvas-header {
+    justify-content: flex-end;
+  }
+
+  .offcanvas-body {
+    display: flex;
+    align-items: center;
+  }
+
+  .offcanvas-body ul {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+  }
+  .offcanvas-end {
+    border-radius: 15px;
+    top: 20%;
+    display: flex;
+    right: 20%;
+    left: 20%;
+    bottom: 20%;
+    height: auto;
+    width: auto;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: transparent;
+  }
+
+  .sub-title {
+    font-size: 15px;
+  }
+
+  .caixa img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .description-produto {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contato-equipe {
+    height: 1000px;
+  }
+  .equipe {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .caixa p {
+    width: 100%;
+  }
+}
