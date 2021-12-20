@@ -29,6 +29,10 @@
       referrerpolicy="no-referrer"
     />
     <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <link
       rel="shortcut icon"
       href="./src/img/Sabonetes/Logo_Oficial.png"
       type="image/x-icon"
@@ -39,7 +43,7 @@
     <!--Inicio navbar-->
 
     <header>
-      <nav>
+      <nav class="navbar-default">
         <div class="img">
           <a href="#"
             ><img
@@ -50,7 +54,7 @@
         </div>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#lancamentos">Produtos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -99,12 +103,38 @@
       </nav>
     </header>
     <section class="home">
-      <h1>Liz Artes & Aromas</h1>
-      <p>Produtos naturais feitos com amor!</p>
-      <button><a href="#produtos">Saiba Mais</a></button>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="/src/img/Sabonetes/IMAGEM_SHAMPOO_3_X_1.jpeg" alt="">
+            <div class="infos">
+              <h1>Liz Artes & Aromas</h1>
+            <p>Produtos naturais feitos com amor!</p>
+            <button><a href="#produtos">Saiba Mais</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide"><img src="/src/img/Sabonetes/IMAGEM_TUBO_DE_MEL.jpeg" alt=""><div class="infos">
+              <h1>Liz Artes & Aromas</h1>
+            <p>Produtos naturais feitos com amor!</p>
+            <button><a href="#produtos">Saiba Mais</a></button>
+            </div></div>
+          <div class="swiper-slide"><img src="/src/img/Sabonetes/IMAGEM_TUBO_DE_MEL.jpeg" alt=""><div class="infos">
+              <h1>Liz Artes & Aromas</h1>
+            <p>Produtos naturais feitos com amor!</p>
+            <button><a href="#produtos">Saiba Mais</a></button>
+            </div></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+       
+      </div>
     </section>
     <main>
-      <div class="title">
+      <div class="title" id="lancamentos">
         <h1 class="title-section">Lançamentos</h1>
         <p class="sub-title">Produtos exclusivos e feitos a mão para você !</p>
       </div>
@@ -283,6 +313,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./src/js/scripts.js"></script>
   </body>
 </html>

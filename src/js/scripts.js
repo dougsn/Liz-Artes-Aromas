@@ -11,8 +11,10 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home', {
   delay: 100,
-  origin: 'left'
+  origin: 'left',
 })
+
+
 
 ScrollReveal().reveal('.title-section, .sub-title', {
   delay: 100,
@@ -58,4 +60,45 @@ ScrollReveal().reveal('.container-img', {
   delay: 600,
   origin: 'right',
   interval: 100
+})
+
+/******************************
+ ****** Slide  *******
+ ******************************/
+
+const swiper = new Swiper('.swiper', {
+
+  spaceBetween: 30,
+  speed:900,
+  loop: true,
+  effect: "fade",
+  autoplay: {
+    delay: 2500,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    
+  },
+});
+
+
+/*************************************************************************
+**************************************************************************
+                Transição do Navbar
+**************************************************************************
+**************************************************************************
+*/
+
+window.addEventListener('scroll', function () {
+  var header = document.querySelector('nav')
+  header.classList.toggle('sticky', window.scrollY > 740)
+
+  /*  Ativar caso queria que tenha uma transição de cor do navbar do Header para o Main */
 })
