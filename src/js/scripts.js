@@ -1,3 +1,21 @@
+
+
+const navMenu = document.getElementById('nav-menu'),
+toggleMenu = document.getElementById('toggle-menu'),
+CloseMenu = document.getElementById('close-menu');
+
+
+toggleMenu.addEventListener('click',() => {
+  navMenu.classList.toggle('show')
+})
+
+navMenu.addEventListener('click',() => {
+  navMenu.classList.remove('show')
+})
+
+// É necessário colocar o nav como addEventListener, pois quando for clicado nele, feche o menuResponsivo.
+
+
 /******************************
  ****** Página Principal *******
  ******************************/
@@ -97,8 +115,9 @@ const swiper = new Swiper('.swiper', {
 */
 
 window.addEventListener('scroll', function () {
-  var header = document.querySelector('nav')
+  var header = document.querySelector('header')
   header.classList.toggle('sticky', window.scrollY > 740)
 
   /*  Ativar caso queria que tenha uma transição de cor do navbar do Header para o Main */
 })
+
