@@ -29,9 +29,9 @@
       referrerpolicy="no-referrer"
     />
     <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link
       rel="shortcut icon"
       href="./src/img/Sabonetes/Logo_Oficial.png"
@@ -44,55 +44,69 @@
 
     <header>
       <div class="img">
-          <a href="#"
-            ><img
-              class="img-header"
-              src="./src/img/Sabonetes/Logo_Oficial.png"
-              alt=""
-          /></a>
-        </div>
+        <a href="#"
+          ><img
+            class="img-header"
+            src="./src/img/Sabonetes/Logo_Oficial.png"
+            alt=""
+        /></a>
+      </div>
       <nav class="nav" id="nav-menu">
-        
-        <ion-icon name="close-outline" id="close-menu" class="header__close"></ion-icon>
+        <ion-icon
+          name="close-outline"
+          id="close-menu"
+          class="header__close"
+        ></ion-icon>
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#lancamentos">Produtos</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contato">Contato</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#lancamentos">Produtos</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contato">Contato</a>
+          </li>
         </ul>
       </nav>
-      <ion-icon name="menu-outline" id="toggle-menu" class="header__toggle"></ion-icon>
-     
-        
+      <ion-icon
+        name="menu-outline"
+        id="toggle-menu"
+        class="header__toggle"
+      ></ion-icon>
     </header>
     <section class="home">
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="/src/img/Sabonetes/IMAGEM_SHAMPOO_3_X_1.jpeg" alt="">
+          <div class="swiper-slide">
+            <img src="/src/img/Sabonetes/IMAGEM_SHAMPOO_3_X_1.jpeg" alt="" />
             <div class="infos">
               <h1>Liz Artes & Aromas</h1>
-            <p>Produtos naturais feitos com amor!</p>
-            <button><a href="#produtos">Saiba Mais</a></button>
+              <p>Produtos naturais feitos com amor!</p>
+              <button><a href="#produtos">Saiba Mais</a></button>
             </div>
           </div>
-          <div class="swiper-slide"><img src="/src/img/Sabonetes/IMAGEM_TUBO_DE_MEL.jpeg" alt=""><div class="infos">
+          <div class="swiper-slide">
+            <img src="/src/img/Sabonetes/IMAGEM_TUBO_DE_MEL.jpeg" alt="" />
+            <div class="infos">
               <h1>Liz Artes & Aromas</h1>
-            <p>Produtos naturais feitos com amor!</p>
-            <button><a href="#produtos">Saiba Mais</a></button>
-            </div></div>
-          <div class="swiper-slide"><img src="/src/img/Sabonetes/IMAGEM_TUBO_DE_MEL.jpeg" alt=""><div class="infos">
+              <p>Produtos naturais feitos com amor!</p>
+              <button><a href="#produtos">Saiba Mais</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/src/img/Sabonetes/IMAGEM_TUBO_DE_MEL.jpeg" alt="" />
+            <div class="infos">
               <h1>Liz Artes & Aromas</h1>
-            <p>Produtos naturais feitos com amor!</p>
-            <button><a href="#produtos">Saiba Mais</a></button>
-            </div></div>
+              <p>Produtos naturais feitos com amor!</p>
+              <button><a href="#produtos">Saiba Mais</a></button>
+            </div>
+          </div>
         </div>
         <div class="swiper-pagination"></div>
-      
+
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-      
-       
       </div>
     </section>
     <main>
@@ -102,98 +116,97 @@
       </div>
 
       <section id="produtos" class="produtos">
-        <div class="caixa">
-          <img
-            src="./src/img/Sabonetes/IMAGEM_ARGILA_AMARELA_E_BRANCA.jpeg"
-            alt=""
-          />
-          <div class="texto">
-            <h1 class="title-produto">Sabonete<br />Argila Amarela & Branca</h1>
-            <p class="description-produto">
-              Ajuda a absorver a oleosidade e colobora na produção de colágeno.
-            </p>
+        <div class="swiper lancamentos">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide caixa">
+              <img
+                src="./src/img/Sabonetes/IMAGEM_ARGILA_VERMELHA.jpeg"
+                alt=""
+              />
+              <div class="texto">
+                <h1 class="title-produto">
+                  Sabonete <br />
+                  Argila Vermelha
+                </h1>
+                <p class="description-produto">
+                  Recomendado para peles sensíveis, hidrata, previne linhas de
+                  expressão, cicatrizante.
+                </p>
+              </div>
+              <a target="_blank" class="btn" href="detalhes2.html"
+                ><span>Comprar</span></a
+              >
+            </div>
+            <div class="swiper-slide caixa">
+              <img
+                src="./src/img/Sabonetes/IMAGEM_SABONETE_CHOCOLATE.jpeg"
+                alt=""
+              />
+              <div class="texto">
+                <h1 class="title-produto">
+                  Sabonete <br />
+                  Argila & Chocolate
+                </h1>
+                <p class="description-produto">
+                  Sabonete 100% natural , saponificado em óleos vegetais e cacau
+                  em pó.
+                </p>
+              </div>
+              <a target="_blank" class="btn" href="detalhes3.html"
+                ><span>Comprar</span></a
+              >
+            </div>
+            <div class="swiper-slide caixa">
+              <img
+                src="./src/img/Sabonetes/IMAGEM_AVEIA_LAMINADA.jpeg"
+                alt=""
+              />
+              <div class="texto">
+                <h1 class="title-produto">
+                  Sabonete<br />
+                  Argila Aveia Laminada
+                </h1>
+                <p class="description-produto">
+                  Poderosa ação de limpeza e evita a desidratação da pele.
+                </p>
+              </div>
+              <a target="_blank" class="btn" href="detalhes4.html"
+                ><span>Comprar</span></a
+              >
+            </div>
+            <div class="swiper-slide caixa">
+              <img src="./src/img/Sabonetes/IMAGEM_FUBÁ_E_MEL.jpeg" alt="" />
+              <div class="texto">
+                <h1 class="title-produto">
+                  Sabonete <br />
+                  Argila Fuba & Mel
+                </h1>
+                <p class="description-produto">
+                  O fubá tem a função esfoliante e o mel, é um hidratante
+                  natural.
+                </p>
+              </div>
+              <a target="_blank" class="btn" href="detalhes5.html"
+                ><span>Comprar</span></a
+              >
+            </div>
+            <div class="swiper-slide caixa">
+              <img
+                src="./src/img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg"
+                alt=""
+              />
+              <div class="texto">
+                <h1 class="title-produto">Sabonete <br />Argila & Oliva</h1>
+                <p class="description-produto">
+                  Indicado para peles sensíveis e ressecadas. Rico em
+                  antioxidantes, vitaminas e minerais.
+                </p>
+              </div>
+              <a target="_blank" class="btn" href="detalhes6.html"
+                ><span>Comprar</span></a
+              >
+            </div>
           </div>
-          <a target="_blank" class="btn" href="detalhes1.html"
-            ><span>Comprar</span></a
-          >
-        </div>
-        <div class="caixa">
-          <img src="./src/img/Sabonetes/IMAGEM_ARGILA_VERMELHA.jpeg" alt="" />
-          <div class="texto">
-            <h1 class="title-produto">
-              Sabonete <br />
-              Argila Vermelha
-            </h1>
-            <p class="description-produto">
-              Recomendado para peles sensíveis, hidrata, previne linhas de
-              expressão, cicatrizante.
-            </p>
-          </div>
-          <a target="_blank" class="btn" href="detalhes2.html"
-            ><span>Comprar</span></a
-          >
-        </div>
-        <div class="caixa">
-          <img
-            src="./src/img/Sabonetes/IMAGEM_SABONETE_CHOCOLATE.jpeg"
-            alt=""
-          />
-          <div class="texto">
-            <h1 class="title-produto">
-              Sabonete <br />
-              Argila & Chocolate
-            </h1>
-            <p class="description-produto">
-              Sabonete 100% natural , saponificado em óleos vegetais e cacau em
-              pó.
-            </p>
-          </div>
-          <a target="_blank" class="btn" href="detalhes3.html"
-            ><span>Comprar</span></a
-          >
-        </div>
-        <div class="caixa">
-          <img src="./src/img/Sabonetes/IMAGEM_AVEIA_LAMINADA.jpeg" alt="" />
-          <div class="texto">
-            <h1 class="title-produto">
-              Sabonete<br />
-              Argila Aveia Laminada
-            </h1>
-            <p class="description-produto">
-              Poderosa ação de limpeza e evita a desidratação da pele.
-            </p>
-          </div>
-          <a target="_blank" class="btn" href="detalhes4.html"
-            ><span>Comprar</span></a
-          >
-        </div>
-        <div class="caixa">
-          <img src="./src/img/Sabonetes/IMAGEM_FUBÁ_E_MEL.jpeg" alt="" />
-          <div class="texto">
-            <h1 class="title-produto">
-              Sabonete <br />
-              Argila Fuba & Mel
-            </h1>
-            <p class="description-produto">
-              O fubá tem a função esfoliante e o mel, é um hidratante natural.
-            </p>
-          </div>
-          <a target="_blank" class="btn" href="detalhes5.html"
-            ><span>Comprar</span></a
-          >
-        </div>
-        <div class="caixa">
-          <img src="./src/img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg" alt="" />
-          <div class="texto">
-            <h1 class="title-produto">Sabonete <br />Argila & Oliva</h1>
-            <p class="description-produto">
-              Indicado para peles sensíveis e ressecadas. Rico em antioxidantes,
-              vitaminas e minerais.
-            </p>
-          </div>
-          <a target="_blank" class="btn" href="detalhes6.html"
-            ><span>Comprar</span></a
-          >
         </div>
       </section>
       <div class="wpp">
@@ -276,8 +289,14 @@
     ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="./src/js/scripts.js"></script>
   </body>
 </html>

@@ -1,20 +1,16 @@
-
-
 const navMenu = document.getElementById('nav-menu'),
-toggleMenu = document.getElementById('toggle-menu'),
-CloseMenu = document.getElementById('close-menu');
+  toggleMenu = document.getElementById('toggle-menu'),
+  CloseMenu = document.getElementById('close-menu')
 
-
-toggleMenu.addEventListener('click',() => {
+toggleMenu.addEventListener('click', () => {
   navMenu.classList.toggle('show')
 })
 
-navMenu.addEventListener('click',() => {
+navMenu.addEventListener('click', () => {
   navMenu.classList.remove('show')
 })
 
 // É necessário colocar o nav como addEventListener, pois quando for clicado nele, feche o menuResponsivo.
-
 
 /******************************
  ****** Página Principal *******
@@ -29,10 +25,8 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home', {
   delay: 100,
-  origin: 'left',
+  origin: 'left'
 })
-
-
 
 ScrollReveal().reveal('.title-section, .sub-title', {
   delay: 100,
@@ -40,11 +34,11 @@ ScrollReveal().reveal('.title-section, .sub-title', {
   interval: 100
 })
 
-ScrollReveal().reveal('.caixa', {
-  delay: 300,
-  origin: 'left',
-  interval: 100
-})
+// ScrollReveal().reveal('.caixa', {
+//   delay: 300,
+//   origin: 'left',
+//   interval: 100
+// })
 
 ScrollReveal().reveal('.container-equipe', {
   delay: 300,
@@ -84,28 +78,55 @@ ScrollReveal().reveal('.container-img', {
  ****** Slide  *******
  ******************************/
 
-const swiper = new Swiper('.swiper', {
-
+const swiper = new Swiper('.home .swiper', {
   spaceBetween: 30,
-  speed:900,
+  speed: 900,
   loop: true,
-  effect: "fade",
+  effect: 'fade',
   autoplay: {
-    delay: 2500,
+    delay: 2500
   },
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
+    clickable: true
   },
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    
-  },
-});
+    prevEl: '.swiper-button-prev'
+  }
+})
 
+const slide = new Swiper('.lancamentos', {
+  grabCursor: true,
+  spaceBetween: 15,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    600: {
+      slidesPerView: 2
+    },
+    1000: {
+      slidesPerView: 3
+    },
+    1350: {
+      slidesPerView: 4
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+})
 
 /*************************************************************************
 **************************************************************************
@@ -120,4 +141,3 @@ window.addEventListener('scroll', function () {
 
   /*  Ativar caso queria que tenha uma transição de cor do navbar do Header para o Main */
 })
-
