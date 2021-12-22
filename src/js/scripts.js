@@ -12,6 +12,60 @@ navMenu.addEventListener('click', () => {
 
 // É necessário colocar o nav como addEventListener, pois quando for clicado nele, feche o menuResponsivo.
 
+
+/******************************
+ ****** Slide  *******
+ ******************************/
+
+ const swiper = new Swiper('.home .swiper', {
+  // spaceBetween: 30,
+  speed: 900,
+  loop: true,
+  effect: 'fade',
+  autoplay: {
+    delay: 2500
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+})
+
+const slide = new Swiper('.lancamentos', {
+  grabCursor: true,
+  spaceBetween: 15,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3500
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    850: {
+      slidesPerView: 2
+    },
+    1200: {
+      slidesPerView: 3
+    },
+    1700: {
+      slidesPerView: 3
+    },
+    1990: {
+      slidesPerView: 4 
+    }
+  }
+})
+
+
 /******************************
  ****** Página Principal *******
  ******************************/
@@ -34,11 +88,11 @@ ScrollReveal().reveal('.title-section, .sub-title', {
   interval: 100
 })
 
-// ScrollReveal().reveal('.caixa', {
-//   delay: 300,
-//   origin: 'left',
-//   interval: 100
-// })
+ScrollReveal().reveal('.produtos', {
+  delay: 300,
+  origin: 'left',
+  interval: 100
+})
 
 ScrollReveal().reveal('.container-equipe', {
   delay: 300,
@@ -74,59 +128,6 @@ ScrollReveal().reveal('.container-img', {
   interval: 100
 })
 
-/******************************
- ****** Slide  *******
- ******************************/
-
-const swiper = new Swiper('.home .swiper', {
-  spaceBetween: 30,
-  speed: 900,
-  loop: true,
-  effect: 'fade',
-  autoplay: {
-    delay: 2500
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-})
-
-const slide = new Swiper('.lancamentos', {
-  grabCursor: true,
-  spaceBetween: 15,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1
-    },
-    600: {
-      slidesPerView: 2
-    },
-    1000: {
-      slidesPerView: 3
-    },
-    1350: {
-      slidesPerView: 4
-    }
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-})
 
 /*************************************************************************
 **************************************************************************
