@@ -41,7 +41,7 @@ ul {
 
 header {
   position: fixed;
-  z-index: 3;
+  z-index: 999;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -372,6 +372,42 @@ nav ul li a:hover::before {
   transform: scale(1.15);
 }
 
+/*Contato*/
+
+.contato {
+  width: 80%;
+  margin: auto;
+}
+
+.container-contato {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box-contato {
+  padding: 40px;
+  background: #333;
+  border-radius: 7px;
+}
+
+.icon-contato{
+  color: #fff;
+  font-size: 30px;
+}
+
+.mapa {
+  width: 80%;
+  margin: auto;
+}
+
+.mapa iframe {
+  width: 100%;
+  margin: 50px 0;
+  height: 400px;
+  border-radius: 10px;
+}
+/*Footer*/
+
 .final {
   margin-top: 50px;
   padding: 20px;
@@ -383,6 +419,8 @@ nav ul li a:hover::before {
 .final p {
   margin-bottom: 0rem;
 }
+
+
 
 /*Responsividade*/
 

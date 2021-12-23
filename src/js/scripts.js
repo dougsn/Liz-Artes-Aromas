@@ -77,7 +77,7 @@ ScrollReveal({
   delay: 400
 })
 
-ScrollReveal().reveal('.home', {
+ScrollReveal().reveal('.info_detalhes', {
   delay: 100,
   origin: 'left'
 })
