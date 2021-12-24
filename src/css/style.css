@@ -65,12 +65,10 @@ header {
 .nav__link {
   position: relative;
   text-decoration: none;
-  color: #1e97c3 !important;
+  color: #519259 !important;
   transition: 0.5s ease;
   font-weight: 600;
 }
-
-
 
 header.sticky {
   padding: 10px 50px;
@@ -79,8 +77,6 @@ header.sticky {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(5px);
 }
-
-
 
 nav ul li a::before {
   content: '';
@@ -116,7 +112,7 @@ nav ul li a:hover::before {
   border: none;
   padding: 12px;
   border-radius: 7px;
-  background-color: #2f86a6;
+  background-color: #519259;
   margin-top: 20px;
   cursor: pointer;
   transition: 0.5s ease;
@@ -153,7 +149,7 @@ nav ul li a:hover::before {
 }
 
 .infos h1 {
-  color: #2f86a6;
+  color: #519259;
   font-family: 'Poppins';
   font-weight: 700;
 }
@@ -161,11 +157,10 @@ nav ul li a:hover::before {
 .infos p {
   font-size: 30px;
   margin-top: 30px;
-  color: #056f95;
+  color: #519259;
 }
 
 /*Inicio dos Produtos*/
-
 
 /*Lançamentos*/
 
@@ -195,7 +190,7 @@ nav ul li a:hover::before {
 }
 
 .btn {
-  background-color: #01aaff;
+  background-color: #519259;
   padding: 5px 15px;
   border-radius: 7px;
   margin: 20px 0px;
@@ -253,7 +248,6 @@ nav ul li a:hover::before {
   transition: 0.5s ease;
 }
 
-
 /*Transicao*/
 
 .transicao {
@@ -298,78 +292,11 @@ nav ul li a:hover::before {
 
 .transicao span a {
   color: #fff !important;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-
-.transicao span a:hover{
+.transicao span a:hover {
   transform: scale(1.1);
-}
-
-
-/*Equipe*/
-
-.contato-equipe {
-  position: relative;
-  height: 700px;
-  background-image: url('../img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.equipe {
-  padding: 30px 15px;
-  backdrop-filter: blur(5px);
-  background-color: rgba(204, 204, 204, 0.6);
-  border-radius: 8px;
-  transition: 0.5s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.equipe:hover {
-  transform: scale(1.02);
-  background-color: rgba(204, 204, 204, 1);
-  backdrop-filter: none;
-}
-.equipe h1 {
-  font-size: 1.5rem;
-}
-
-.equipe p {
-  padding: 20px 0px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.equipe .links {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 20px;
-}
-
-.container-equipe {
-  display: flex;
-  gap: 30px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.equipe .links img {
-  width: 25px;
-  transition: 0.5s ease;
-}
-
-.equipe .links img:hover {
-  transform: scale(1.15);
 }
 
 /*Contato*/
@@ -386,11 +313,21 @@ nav ul li a:hover::before {
 
 .box-contato {
   padding: 40px;
-  background: #333;
+  background: #064635;
   border-radius: 7px;
+  transition: 0.5s ease;
 }
 
-.icon-contato{
+.box-contato:hover {
+  background: #0e5643;
+}
+
+.box-contato:hover .icon-contato {
+  transform: translateY(-5px);
+}
+
+.icon-contato {
+  transition: 0.5s ease;
   color: #fff;
   font-size: 30px;
 }
@@ -408,19 +345,71 @@ nav ul li a:hover::before {
 }
 /*Footer*/
 
-.final {
-  margin-top: 50px;
-  padding: 20px;
+.footer {
+  background-color: #064635;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.footer h1 {
+  color: #519259;
+}
+
+.footer ul {
+  padding-left: 0px;
+}
+
+.footer li a:hover .arrow {
+  padding-right: 10px;
+}
+
+.footer a {
+  color: #519259;
+}
+
+.arrow {
+  margin-right: 5px;
+  transition: 0.3s ease;
+}
+
+.box_footer {
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 280px;
+}
+
+.box_footer_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  background-color: #eee;
+  gap: 20px;
 }
 
-.final p {
-  margin-bottom: 0rem;
+.box_footer_img p {
+  color: #519259;
 }
 
+.box_footer_img img {
+  width: 70px;
+}
 
+.links_rapidos h1 {
+  font-size: 24px;
+}
+
+.creditos {
+  background: #064635;
+  color: #519259;
+  text-align: center;
+  font-size: 20px;
+  padding: 30px;
+  margin: 0;
+}
 
 /*Responsividade*/
 
@@ -519,6 +508,7 @@ nav ul li a:hover::before {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 0px;
   }
   .nav__item {
     margin: 2rem 0;
@@ -576,15 +566,6 @@ nav ul li a:hover::before {
 
   .description-produto {
     font-size: 12px;
-  }
-}
-
-@media (max-width: 850px) {
-  .contato-equipe {
-    height: 1000px;
-  }
-  .equipe {
-    padding: 20px;
   }
 }
 
