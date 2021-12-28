@@ -12,12 +12,11 @@ navMenu.addEventListener('click', () => {
 
 // É necessário colocar o nav como addEventListener, pois quando for clicado nele, feche o menuResponsivo.
 
-
 /******************************
  ****** Slide  *******
  ******************************/
 
- const swiper = new Swiper('.home .swiper', {
+const swiper = new Swiper('.home .swiper', {
   // spaceBetween: 30,
   speed: 900,
   loop: true,
@@ -60,11 +59,10 @@ const slide = new Swiper('.lancamentos', {
       slidesPerView: 3
     },
     1990: {
-      slidesPerView: 4 
+      slidesPerView: 4
     }
   }
 })
-
 
 /******************************
  ****** Página Principal *******
@@ -72,7 +70,7 @@ const slide = new Swiper('.lancamentos', {
 
 ScrollReveal({
   reset: false /*Caso queira que a animação do scroll fique tanto na descida quanto na subida, trocar para true */,
-  distance: '60px',
+  distance: '40px',
   duration: 2500,
   delay: 400
 })
@@ -89,12 +87,6 @@ ScrollReveal().reveal('.title-section, .sub-title', {
 })
 
 ScrollReveal().reveal('.produtos', {
-  delay: 300,
-  origin: 'left',
-  interval: 100
-})
-
-ScrollReveal().reveal('.container-equipe', {
   delay: 300,
   origin: 'left',
   interval: 100
@@ -127,7 +119,6 @@ ScrollReveal().reveal('.container-img', {
   origin: 'right',
   interval: 100
 })
-
 
 /*************************************************************************
 **************************************************************************

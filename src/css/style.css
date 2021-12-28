@@ -144,21 +144,20 @@ nav ul li a:hover::before {
   position: relative;
 }
 
-.swiper-button-prev, .swiper-button-next{
-  
+.swiper-button-prev,
+.swiper-button-next {
   color: #519259 !important;
 }
 
 .swiper-pagination-bullet-active {
   background: #519259 !important;
-  }
-  
+}
 
 .infos {
   position: absolute;
-  bottom: 37%;
-  right: 30%;
-  left: 30%;
+  bottom: 35%;
+  right: 0%;
+  left: 0%;
   text-align: center;
 }
 
@@ -191,6 +190,11 @@ nav ul li a:hover::before {
   margin: auto;
 }
 
+.title {
+  width: 80%;
+  margin: auto;
+}
+
 .title-section {
   text-align: center;
   margin-top: 100px;
@@ -212,7 +216,8 @@ nav ul li a:hover::before {
   border: none;
 }
 
-.btn-check:focus+.btn, .btn:focus {
+.btn-check:focus + .btn,
+.btn:focus {
   box-shadow: none;
 }
 
@@ -338,7 +343,6 @@ nav ul li a:hover::before {
 }
 
 .accordion-button::after {
- 
   background-image: url('../img/icons/arrow-donw.svg');
   background-color: #51925926;
   border-radius: 50%;
@@ -346,10 +350,8 @@ nav ul li a:hover::before {
 
 .accordion-button:not(.collapsed)::after {
   background-image: url('../img/icons/arrow-donw.svg');
-  background-color: #519259a1;  
-
+  background-color: #519259a1;
 }
-
 
 /*Contato*/
 
@@ -501,34 +503,46 @@ nav ul li a:hover::before {
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
+  /*Info Home*/
+  .home h1 {
+    font-size: 23px !important;
+  }
+  .home p {
+    font-size: 16px !important;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 5px !important;
+    height: 50px !important;
+  }
+
   .transicao {
     height: 150px !important;
   }
 
   .transicao h1 {
+    font-size: 19px !important;
+  }
+
+  .transicao span {
     font-size: 20px !important;
-}
+  }
 
-.transicao span {
-  font-size: 20px !important;
-}
+  /*Contato*/
 
-/*Contato*/
+  .box-contato {
+    padding: 20px !important;
+  }
 
-.box-contato {
-  padding: 20px !important;
-}
+  .icon-contato {
+    font-size: 20px !important;
+  }
 
-
-.icon-contato {
-  font-size: 20px !important;
-}
-
-.mapa iframe {
-height: 200px !important;
-}
-
+  .mapa iframe {
+    height: 200px !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -563,23 +577,20 @@ height: 200px !important;
     font-size: 14px;
     margin-right: 5px;
   }
-  
+
   /*Contato*/
 
   .box-contato {
     padding: 25px;
-}
+  }
 
-
-.icon-contato {
+  .icon-contato {
     font-size: 25px;
-}
+  }
 
-.mapa iframe {
-  height: 300px;
-}
-
-
+  .mapa iframe {
+    height: 300px;
+  }
 }
 
 @media (max-width: 764px) {
@@ -603,10 +614,9 @@ height: 200px !important;
   .nav {
     position: fixed;
     top: 0;
-    right: -100% ;
+    right: -100%;
     background-color: #fff;
-    color: #333;
-    width: 100%;
+    width: 60%;
     height: 100vh;
     padding: 24px 0;
     transition: 0.5s ease;
@@ -629,7 +639,6 @@ height: 200px !important;
   .show {
     right: 0;
     display: flex;
-
   }
 
   .nav__list .nav__item {
@@ -637,6 +646,11 @@ height: 200px !important;
   }
 
   /*Menu Responsivo - Fim */
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 30px !important;
+  }
 
   .home h1 {
     font-size: 35px;
@@ -663,6 +677,10 @@ height: 200px !important;
     font-size: 12px;
   }
 
+  .infos {
+    bottom: 38%;
+  }
+
   /*Produtos*/
 
   .conteiner-produtos {
@@ -679,7 +697,7 @@ height: 200px !important;
   }
 
   .description-produto {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /*Transicao*/
@@ -696,7 +714,7 @@ height: 200px !important;
     font-size: 25px;
   }
 
-    /*Footer*/
+  /*Footer*/
 
   .footer {
     flex-direction: column;
@@ -705,7 +723,6 @@ height: 200px !important;
   .creditos {
     font-size: 16px;
   }
-
 }
 
 @media (max-width: 1400px) {
