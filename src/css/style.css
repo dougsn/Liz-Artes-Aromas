@@ -616,7 +616,7 @@ nav ul li a:hover::before {
     top: 0;
     right: -100%;
     background-color: #fff;
-    width: 60%;
+    width: 75%;
     height: 100vh;
     padding: 24px 0;
     transition: 0.5s ease;

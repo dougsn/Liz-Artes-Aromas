@@ -70,7 +70,7 @@ const slide = new Swiper('.lancamentos', {
 
 ScrollReveal({
   reset: false /*Caso queira que a animação do scroll fique tanto na descida quanto na subida, trocar para true */,
-  distance: '40px',
+  distance: '60px',
   duration: 2500,
   delay: 400
 })
@@ -116,7 +116,7 @@ ScrollReveal().reveal('.descricao', {
 
 ScrollReveal().reveal('.container-img', {
   delay: 600,
-  origin: 'right',
+  origin: 'left',
   interval: 100
 })
 
