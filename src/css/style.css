@@ -498,7 +498,7 @@ nav ul li a:hover::before {
   }
 
   .descricao_produto {
-    padding: 100px 50px;
+    padding: 100px 50px 30px 50px;
     gap: 50px !important;
   }
 }
