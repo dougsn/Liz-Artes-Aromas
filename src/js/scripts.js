@@ -86,23 +86,31 @@ ScrollReveal().reveal('.title-section, .sub-title', {
   interval: 100
 })
 
-ScrollReveal().reveal('.produtos', {
+ScrollReveal().reveal('.produtos, .animation, .mapa', {
   delay: 300,
   origin: 'left',
   interval: 100
 })
 
-ScrollReveal().reveal('.links', {
+ScrollReveal().reveal('.links, .accordion-item', {
   delay: 600,
   origin: 'top',
   interval: 100
 })
 
-ScrollReveal().reveal('.final', {
+ScrollReveal().reveal('.accordion-item, .anim_footer, .box_footer_img', {
+  delay: 400,
+  origin: 'top',
+  interval: 100
+})
+
+ScrollReveal().reveal(' .transicao_title, .transicao_icons', {
   delay: 400,
   origin: 'left',
   interval: 100
 })
+
+
 
 /******************************
  ****** Página Detalhes *******
