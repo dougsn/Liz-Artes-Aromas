@@ -332,14 +332,14 @@ nav ul li a:hover::before {
 .accordion-button:not(.collapsed) {
   color: #519259;
   background-color: #51925929;
-  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+  box-shadow: none !important;
 }
 
 .accordion-button:focus {
   z-index: 3;
   border-color: #86b7fe;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem #51925947;
+  box-shadow: none;
 }
 
 .accordion-button::after {
